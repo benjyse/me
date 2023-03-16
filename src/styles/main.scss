@@ -1,0 +1,34 @@
+$primary-colour: #2d3142;
+$secondary-colour: #3f5b98;
+$accent-colour: #f7dca3;
+$background-colour: #f9f7f3;
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+}
+
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.btn {
+  @include border-radius();
+}
+
+.header {
+  display: flex;
+}
+
+.background {
+  background-image: linear-gradient(to bottom right, #355c7d, #6c5b7b, #c06c84);
+}
