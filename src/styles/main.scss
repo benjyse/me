@@ -1,9 +1,9 @@
-$primary-colour: #2d3142;
-$secondary-colour: #3f5b98;
-$accent-colour: #f7dca3;
-$background-colour: #f9f7f3;
+$primary-colour: #212121;
+$secondary-colour: #616161;
+$accent-colour: #bdbdbd;
 
 :root {
+  --color-text: $accent-colour;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;
@@ -26,9 +26,14 @@ $background-colour: #f9f7f3;
 }
 
 .header {
-  display: flex;
+  display: grid;
 }
 
 .background {
-  background-image: linear-gradient(to bottom right, #355c7d, #6c5b7b, #c06c84);
+  background-color: $primary-colour;
+  background-repeat: no-repeat;
+}
+
+body {
+  color: $accent-colour;
 }

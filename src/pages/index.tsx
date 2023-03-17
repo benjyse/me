@@ -5,13 +5,7 @@ import "../styles/main.scss";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <div
-      className="background"
-      style={{
-        margin: `0 auto`,
-        padding: `var(--size-gutter)`,
-      }}
-    >
+    <div>
       <Layout>
         <p> SOME TEXT </p>
       </Layout>
@@ -21,4 +15,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Welcome!</title>;
+export const Head: HeadFC = () => (
+  <>
+    <body className="background" />
+    <title>Ben Sehic</title>
+  </>
+);
